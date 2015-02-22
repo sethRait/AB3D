@@ -46,7 +46,10 @@ var userProfile = {
             }
         }
         getTargets: function(){
-                var db = new Firebase("https://assassins.firebaseio.com/");
+                var db = db.child("users/user1/name").on("value", 
+			function(snapshot){
+				console.log(snapshot.val());
+		});
                 db.child("")
                 return targets;
         }
