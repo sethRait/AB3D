@@ -47,47 +47,56 @@ function setTemplate() {
   };
   db.set(userTemplate);
 }
-
-//function readFirst() {
-//  "use strict";
-//  /*ignore jslint start*/
-//  var db = new Firebase("https://assassins.firebaseio.com/");
-//  /*ignore jslint end*/
-//  
-//  var one = db.child("users/user1/name").on("value", function(snapshot){
-//    console.log(snapshot.val());
-//  });
+//-----------------------------------
+function createUser(name,pass){
+  console.log(name);
+  console.log(pass);
+  var user = db.child("users/"+name).on("value",  function(snapshot){
+    if (snapshot.val() != null){
+      alert("please pick a different user name, u bitch");
+    }
+  }
+  var db = new Firebase("https://assassins.firebaseio.com/users/"+name);
+  var user = {
+          passkey: pass,
+          score: 0,
+          targets: {
+            t1: "random",
+            t2: "jan",
+            t3: "seth",
+            t4: "david"
+      }
+  };
+  db.set(user);
   
-  
-//  var one = db.child("users/user1/name").on("value", function(snapshot){
-//    alert(snapshot);
-//  }
-//  
-//  var first = db.child("users/user1/targets/t1").on("value", function(snapshot){
-//    alert(snapshot.val());
-//});
-//}
+}
 
-/**
-Login button code
-  1 Recieve player name
-  2 Check if valid name
-  3 Print error if not 
-  4 Print name, score, targets
-**/
-//function login(name) {
-//  var db = new Firebase("https://assassins.firebaseio.com/");
-//  
-//  var userTemplate = {
-//    name: "stapler",
-//    passkey: "123",
-//    score: 0,
-//    targets: {
-//      t1: "kat",
-//      t2: "jan",
-//      t3: "seth",
-//      t4: "david"
-//    }
-//  };
-//  db.set(userTemplate);
-//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
