@@ -41,6 +41,9 @@ h1{
 .shadow p{
     font-size: 18px;
 }
+.shadow p:hover{
+    font-size: 20px;
+}
 
 .btn-danger {
     display: block;
@@ -111,8 +114,6 @@ th{
 .submit2{
     margin-top:40px;
 }
-.blood{
-    opacity: 0.3;
-    width: 120px;
-    height: 100%;
+.big:hover{
+    font-size:16px;
 }
