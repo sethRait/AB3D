@@ -24,6 +24,9 @@ h1{
 #hideme1{
     display: none;
 }
+input{
+  color: white;
+}
 #hideme2{
     display: none;
 }
