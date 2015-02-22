@@ -1,5 +1,10 @@
 body{
     background-image: url("Images/tiles.jpg");
+    font-family: "Market Deco";
+}
+@font-face {
+    font-family: "Market Deco";
+    src: url(\Assasins\Fonts\Market_Deco.ttf);
 }
 #title{
     border-radius: 8px;
@@ -8,7 +13,7 @@ body{
     margin-bottom: 15px;
     background: radial-gradient(rgba(77, 77, 77, 1), rgba(104, 104, 104, 0));
 }
-#title h1{
+h1{
     padding-top: .4em;
     text-align: center;
     color: rgb(140, 0, 0);
@@ -32,7 +37,6 @@ body{
     width: 100%;
     border-radius: 20px;
     background: radial-gradient(rgba(105, 105, 105, 1), rgba(185, 185, 185, 0));
-    font-family: "Market Deco";
 }
 .shadow h3{
     text-decoration: underline;
@@ -42,4 +46,71 @@ body{
     display: block;
     width: 150px;
     margin: 8px auto;
+    color: #7e7e7e;
+}
+.btn-default{
+    font-family: "the grim raiders";
+    color: rgb(140, 0, 0);
+    background-color: #3c3c3c;
+}
+.submit{
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 24px;
+    border: 4px solid rgb(140,0,0);
+}
+.dark{
+    background-color: #3c3c3c;
+    margin-top: 2px;
+    border: 0px;
+    text-align: center;
+}
+.back{
+    height: 250px;
+    width:100%;
+    background-color: rgb(140,0,0);
+    border-radius: 8px;
+    border: 8px double #3c3c3c;
+    text-align: center;
+}
+.back table{
+    margin: 0 auto;
+}
+table{
+    border-spacing: 5px;
+    border: 2px solid #3c3c3c;
+    padding: 6px;
+    font-size: 2em;
+    border-collapse: collapse;
+}
+th{
+    font-style: italic;
+    text-align: center;
+}
+.middle{
+    background: radial-gradient(rgba(105, 105, 105, 1), rgba(185, 185, 185, 0));
+    border-radius: 8px;
+}
+.killskey{
+    margin-top:40px;
+    width: 160px;
+    font-size:1.2em;
+    text-shadow: 1px 1px #000000;
+}
+.key{
+    position: absolute;
+    margin:0 auto;
+    width: 100%;
+}
+.submit2{
+    margin-top:40px;
+}
+.blood{
+    opacity: 0.3;
+    width: 120px;
+    height: 100%;
+}
+
+.table table{
+  
 }
