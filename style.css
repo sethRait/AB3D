@@ -8,7 +8,7 @@ body{
     margin-bottom: 15px;
     background: radial-gradient(rgba(77, 77, 77, 1), rgba(104, 104, 104, 0));
 }
-#title h1{
+h1{
     padding-top: .4em;
     text-align: center;
     color: rgb(140, 0, 0);
@@ -59,4 +59,31 @@ body{
     margin-top: 2px;
     border: 0px;
     text-align: center;
+}
+.back{
+    height: 500px;
+    width:100%;
+    background-color: rgb(140,0,0);
+    border-radius: 8px;
+    border: 8px double #3c3c3c;
+    text-align: center;
+}
+.back table{
+    margin: 0 auto;
+}
+table{
+    border-spacing: 5px;
+    border: 2px solid #3c3c3c;
+    padding: 6px;
+    font-family: "Market Deco";
+    font-size: 2em;
+    border-collapse: collapse;
+}
+th{
+    font-style: italic;
+    text-align: center;
+}
+.middle{
+    background: radial-gradient(rgba(105, 105, 105, 1), rgba(185, 185, 185, 0));
+    border-radius: 8px;
 }
