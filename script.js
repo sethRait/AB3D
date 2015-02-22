@@ -21,7 +21,11 @@ var userProfile = {
         targets: [undefined];
 
         userProfile: function(name, passkey){
-                this.name = //
+                this.name = db.child("users/user1/name").on("value", 
+			function(snapshot){
+				snapshot.val();
+		});
+
                 this.passkey = passkey;
 
                 for ( i = 0; i<3; i++) {
@@ -46,10 +50,7 @@ var userProfile = {
             }
         }
         getTargets: function(){
-                var db = db.child("users/user1/name").on("value", 
-			function(snapshot){
-				console.log(snapshot.val());
-		});
+
                 db.child("")
                 return targets;
         }
