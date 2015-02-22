@@ -3,6 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Assassins</title>
+    <script src="https://cdn.firebase.com/js/client/2.2.0/firebase.js"></script>
+    <script src="script.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,20 +22,20 @@
         </div>
     </div>
     <div class="col-md-4 middle">
-        <div id="login" class="btn btn-danger">log in</div>
-        <form action="UserInfo.html" method ="get" id="hideme1">
+        <div id="login" class="btn btn-danger">Log In</div>
+        <div id="hideme1">
             <div class="form-group">
-                <input type="text" name="name" placeholder="Name" class="form-control dark">
-                <input type="text" name="passkey" placeholder="Passkey" class="form-control dark">
-                <input type="submit" value="X" class="btn btn-default submit">
+                <input type="text" name="name" placeholder="Name" class="form-control dark" id="username">
+                <input type="text" name="passkey" placeholder="Passkey" class="form-control dark" id="key">
+                <button onclick="login(document.getElementById('username').value, document.getElementById('key').value)" class="btn btn-default submit">X</button>
             </div>
-        </form>
+        </div>
         <div id="newuser" class="btn btn-danger">New User</div>
         <form action="UserInfo.html" method="get" id="hideme2">
             <div class="form-group">
-                <input type="text" name="name" placeholder="Name" class="form-control dark">
-                <input type="text" name="passkey" placeholder="Passkey" class="form-control dark">
-                <input type="submit" class="btn btn-default dark submit">
+                <input type="text" name="name" placeholder="Name" class="form-control dark" id="newname">
+                <input type="text" name="passkey" placeholder="Passkey" class="form-control dark" id="newpasskey">
+                <input type="submit" onclick="newuser(document.getElementById('newname').value, document.getElementById('newpasskey').value)" class="btn btn-default dark submit">
             </div>
         </form>
         <a href="scoreboard.html" class="btn btn-danger">Scoreboard</a>
@@ -42,6 +44,11 @@
         <div class="shadow">
             <h3>Directions:</h3>
             <p>Sign up on the form to the left, then each time you log on, you will be able to see a list of your kills and total points, as well as your next targets.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
         </div>
     </div>
 </div>
