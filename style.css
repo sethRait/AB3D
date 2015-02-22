@@ -15,19 +15,9 @@ body{
     font-family: "the grim raiders";
     font-size: 5em;
 }
-.button{
-    background: linear-gradient(to bottom, #a00000, #8c0505);
-    border-radius: 28px;
-    text-shadow: 1px 1px 3px #666666;
-    font-family: Arial;
-    color: #666666;
-    font-size: 20px;
-    padding: 12px 60px;
-    width: 100px;
-    margin: 8px auto;
-    display: block;
-    text-align: center;
-}
 #container{
     text-align: center;
+}
+.btn{
+    margin-top: 10px;
 }
