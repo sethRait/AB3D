@@ -1,5 +1,6 @@
 body{
     background-image: url("Images/tiles.jpg");
+    font-family: "Market Deco";
 }
 #title{
     border-radius: 8px;
@@ -32,7 +33,6 @@ h1{
     width: 100%;
     border-radius: 20px;
     background: radial-gradient(rgba(105, 105, 105, 1), rgba(185, 185, 185, 0));
-    font-family: "Market Deco";
 }
 .shadow h3{
     text-decoration: underline;
@@ -42,6 +42,7 @@ h1{
     display: block;
     width: 150px;
     margin: 8px auto;
+    color: #7e7e7e;
 }
 .btn-default{
     font-family: "the grim raiders";
@@ -61,7 +62,7 @@ h1{
     text-align: center;
 }
 .back{
-    height: 500px;
+    height: 250px;
     width:100%;
     background-color: rgb(140,0,0);
     border-radius: 8px;
@@ -75,7 +76,6 @@ table{
     border-spacing: 5px;
     border: 2px solid #3c3c3c;
     padding: 6px;
-    font-family: "Market Deco";
     font-size: 2em;
     border-collapse: collapse;
 }
@@ -86,4 +86,15 @@ th{
 .middle{
     background: radial-gradient(rgba(105, 105, 105, 1), rgba(185, 185, 185, 0));
     border-radius: 8px;
+}
+.killskey{
+    margin-top:40px;
+    width: 160px;
+    font-size:1.2em;
+    text-shadow: 1px 1px #000000;
+}
+.key{
+    position: absolute;
+    margin:0 auto;
+    width: 100%;
 }
