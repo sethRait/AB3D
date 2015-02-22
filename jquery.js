@@ -3,9 +3,9 @@
  */
 $(document).ready(function(){
     $("#login").click(function(){
-        $("#hideme1").toggle().css("display: hidden");
+        $("#hideme1").toggle().css("display: none");
     });
     $("#newuser").click(function(){
-        $("#hideme2").toggle().css("display: hidden");
+        $("#hideme2").toggle().css("display: none");
     });
 });

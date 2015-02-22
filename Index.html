@@ -5,60 +5,45 @@
     <title>Assassins</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
-    <!-- Latest compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
 <link rel="stylesheet" type="text/css" href="style.css">
 <div id="title"><h1>Assassins</h1></div>
 <div id="container">
-    <div id="login" class="btn btn-danger">log in</div>
-    <div id="hideme1">
-    <div class="form">
-        <form action="script.js">
+<div class="row">
+    <div class="col-md-4">
+        <div class="shadow">
+            <h3>The Game:</h3>
+            <p>Lorem Ipsum</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div id="login" class="btn btn-danger">log in</div>
+        <form action="script.js" id="hideme1">
             <div class="form-group">
-                    <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-4">
-                        <input type="text" name="name" placeholder="Name" class="form-control">
-                    </div>
-                </div>
-                 <br>
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4">
-                                <input type="text" name="passkey" placeholder="Passkey" class="form-control"> <br>
-                            </div>
-                        </div>
+                <input type="text" name="name" placeholder="Name" class="form-control">
+                <input type="text" name="passkey" placeholder="Passkey" class="form-control">
                 <input type="submit" class="btn btn-default">
-                </div>
             </div>
         </form>
-    </div>
-    </div>
-    <div class="form">
-        <form action="script.js">
+        <div id="newuser" class="btn btn-danger">New User</div>
+        <form action="script.js" id="hideme2">
             <div class="form-group">
-                <div class="container">
-                    <div id="newuser" class="btn btn-danger">New User</div>
-                    <div id="hideme2">
-                    <div class="row">
-                        <div class="col-md-4 col-md-offset-4">
-                            <input type="text" name="Name" placeholder="Name" class="form-control">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-4 col-md-offset-4">
-                            <input type="text" name="passkey" placeholder="Passkey" class="form-control"> <br>
-                        </div>
-                    </div>
-                    <input type="submit" class="btn btn-default">
-                </div>
-                </div>
+                <input type="text" name="name" placeholder="Name" class="form-control">
+                <input type="text" name="passkey" placeholder="Passkey" class="form-control">
+                <input type="submit" class="btn btn-default">
             </div>
         </form>
-    </div>    <div id="scoreboard" class="btn btn-danger">scoreboard</div>
+        <a href="#" class="btn btn-danger">Scoreboard</a>
+    </div>
+    <div class="col-md-4">
+        <div class="shadow">
+            <h3>Directions:</h3>
+            <p>Lorem Ipsum</p>
+        </div>
+    </div>
 </div>
-
 </body>
 </html>

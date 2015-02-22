@@ -2,11 +2,11 @@ body{
     background-image: url("Images/tiles.jpg");
 }
 #title{
-    border-radius: 4px;
+    border-radius: 8px;
     margin-left: 32%;
     margin-right: 32%;
     margin-bottom: 15px;
-    background: radial-gradient(rgb(77, 77, 77), rgba(104, 104, 104, 0.04));
+    background: radial-gradient(rgba(77, 77, 77, 1), rgba(104, 104, 104, 0));
 }
 #title h1{
     padding-top: .4em;
@@ -20,4 +20,26 @@ body{
 }
 .btn{
     margin-top: 10px;
+}
+#hideme1{
+    display: none;
+}
+#hideme2{
+    display: none;
+}
+.shadow{
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+    background: radial-gradient(rgba(105, 105, 105, 1), rgba(185, 185, 185, 0));
+    font-family: "Market Deco";
+}
+.shadow h3{
+    text-decoration: underline;
+}
+
+.btn-danger {
+    display: block;
+    width: 150px;
+    margin: 8px auto;
 }
