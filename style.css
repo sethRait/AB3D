@@ -101,3 +101,8 @@ th{
 .submit2{
     margin-top:40px;
 }
+.blood{
+    opacity: 0.3;
+    width: 120px;
+    height: 100%;
+}

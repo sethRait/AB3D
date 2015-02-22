@@ -1,19 +1,23 @@
 var db  =  Firebase("https://assassinate.firebaseio.com/");
 
 function login(name, pass) {
-    "use strict";
-    console.log(name);
-    console.log(pass);
-    var success = 1;
+
+    var success = undefined;
+    var notused = 0;
+
     db  = new Firebase("https://assassinate.firebaseio.com/");
-    var user = db.child("users/"+name).on("value", function(snapshot){
-        if (snapshot.val() != pass){
-            success = 0;
+    var user = db.child("users/"+name.value).on("value", function(snapshot){
+        if (snapshot.val()==null){
+            alert("Username or password doesn't exists");
+        }
+        else if (snapshot.val().passkey != pass.value){
+            alert("WRONG PASSWORD!!!!!!!!!!....or username");
+        }else{
+            window.location = "UserInfo.html";
         }
     });
 
     console.log(success);
-    alert(success);
     return success;
 }
 
@@ -42,7 +46,7 @@ function assassinate(killer, killee){
     ref  = new Firebase("https://assassinate.firebaseio.com/users/"+name);
     var usersRef = ref.set(
         {
-            score: 1
+            score: 1,
         });
 }
 function generateTarget(name){
@@ -73,6 +77,7 @@ function generateTarget(name){
  */
 function newuser(name, pass) {
     ref  = new Firebase("https://assassinate.firebaseio.com/users/"+name);
+
     var usersRef = ref.set(
         {
             name: name,
@@ -84,4 +89,5 @@ function newuser(name, pass) {
             t4: name
         }
     );
+
 }
