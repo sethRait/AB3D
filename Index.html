@@ -25,9 +25,9 @@
         <div id="login" class="btn btn-danger">Log In</div>
         <form action="UserInfo.html" method ="get" id="hideme1">
             <div class="form-group">
-                <input type="text" name="name" placeholder="Name" class="form-control dark">
-                <input type="text" name="passkey" placeholder="Passkey" class="form-control dark">
-                <input type="submit" value="X" class="btn btn-default submit">
+                <input type="text" name="name" placeholder="Name" class="form-control dark" id="username">
+                <input type="text" name="passkey" placeholder="Passkey" class="form-control dark"id="key">
+                <input type="submit" value="X" onclick="login(document.getElementById('username').value, document.getElementById('key').value)" class="btn btn-default submit">
             </div>
         </form>
         <div id="newuser" class="btn btn-danger">New User</div>

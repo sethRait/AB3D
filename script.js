@@ -7,11 +7,13 @@ function login(name, pass) {
     var success = 1;
     db  = new Firebase("https://assassinate.firebaseio.com/");
     var user = db.child("users/"+name).on("value", function(snapshot){
-        if (snapshot.val().password != pass){
+        if (snapshot.val() != pass){
             success = 0;
         }
     });
 
+    console.log(success);
+    alert(success);
     return success;
 }
 
@@ -36,11 +38,11 @@ function getTarget(number){
     })
 }
 
-function assassinate(name){
+function assassinate(killer, killee){
     ref  = new Firebase("https://assassinate.firebaseio.com/users/"+name);
     var usersRef = ref.set(
         {
-            score: 1,
+            score: 1
         });
 }
 function generateTarget(name){
@@ -82,5 +84,4 @@ function newuser(name, pass) {
             t4: name
         }
     );
-
 }

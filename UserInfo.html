@@ -24,8 +24,11 @@
     <div class="col-md-4 col-md-offset-4">
         <form action="Script.js" method="get">
             <div class="form-group killskey">
+                <p>Enter Your Name:</p>
+                <input type="text" name="name" placeholder="your name" class="form-control dark key" id="yourname">
                 <p>Enter Your Kill:</p>
-                <input type="text" name="passkey" placeholder="kill's key" class="form-control dark key">
+                <input type="text" name="name2" placeholder="kill's name" class="form-control dark key" id="killsname">
+                <input type="submit" onclick="assassinate(document.getElementById('yourname').value, document.getElementById('killsname').value)" class="btn btn-default dark submit submit2">
             </div>
         </form>
     </div>
