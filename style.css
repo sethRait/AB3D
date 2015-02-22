@@ -33,13 +33,13 @@ h1{
     width: 100%;
     border-radius: 20px;
     background: radial-gradient(rgba(105, 105, 105, 1), rgba(185, 185, 185, 0));
-    padding: 0 30px;
+    padding: 0 40px;
 }
 .shadow h3{
     text-decoration: underline;
 }
 .shadow p{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .btn-danger {
@@ -81,11 +81,13 @@ h1{
     margin: 0 auto;
 }
 table{
-    border-spacing: 5px;
+    border-spacing: 25px;
     border: 2px solid #3c3c3c;
-    padding: 6px;
+    padding: 26px;
+    margin: auto 10px;
     font-size: 2em;
-    border-collapse: collapse;
+
+
 }
 th{
     font-style: italic;
