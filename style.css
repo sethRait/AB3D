@@ -1,0 +1,36 @@
+body{
+    background-image: url("Images/tiles.jpg");
+}
+#title{
+    border-radius: 4px;
+    margin-left: 32%;
+    margin-right: 32%;
+    margin-bottom: 15px;
+    background: radial-gradient(rgb(77, 77, 77), rgba(104, 104, 104, 0.04));
+}
+#title h1{
+    padding-top: .4em;
+    text-align: center;
+    color: rgb(140, 0, 0);
+    font-family: "the grim raiders";
+    font-size: 5em;
+}
+.button{
+    background: linear-gradient(to bottom, #a00000, #8c0505);
+    border-radius: 28px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Arial;
+    color: #666666;
+    font-size: 20px;
+    padding: 12px 60px;
+    margin-left: 42%;
+    margin-right: 46%;
+    margin-bottom: 4px;
+    display: inline-block;
+    float: none;
+    position: relative;
+}
+#container{
+    display: inline;
+    position: static;
+}
