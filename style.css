@@ -38,6 +38,9 @@ h1{
 .shadow h3{
     text-decoration: underline;
 }
+.shadow p{
+    font-size: 16px;
+}
 
 .btn-danger {
     display: block;
