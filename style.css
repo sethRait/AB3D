@@ -50,10 +50,6 @@ h1{
 .shadow p{
     font-size: 18px;
 }
-.shadow p:hover{
-    font-size: 20px;
-}
-
 .btn-danger {
     display: block;
     width: 150px;
