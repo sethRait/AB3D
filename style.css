@@ -1,3 +1,12 @@
+@font-face
+{
+    font-family: "Market Deco";
+    src: url("Fonts/Market_Deco.ttf");
+}
+@font-face {
+    font-family: "the grim raiders";
+    src: url("Fonts/TheGrimRaiders-Regular.ttf");
+}
 body{
     background-image: url("Images/tiles.jpg");
     font-family: "Market Deco";
