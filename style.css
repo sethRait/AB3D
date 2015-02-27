@@ -9,7 +9,7 @@
 }
 body{
     background-image: url("Images/tiles.jpg");
-    font-family: "Market Deco";
+    font-family: "Market Deco", sans-serif;
 }
 #title{
     border-radius: 8px;
@@ -22,7 +22,7 @@ h1{
     padding-top: .4em;
     text-align: center;
     color: rgb(140, 0, 0);
-    font-family: "the grim raiders";
+    font-family: "the grim raiders", "Helvetica Neue", Helvetica, Arial, serif;
     font-size: 5em;
 }
 #container{
@@ -50,6 +50,7 @@ h1{
 .shadow p{
     font-size: 18px;
 }
+
 .btn-danger {
     display: block;
     width: 150px;
@@ -57,7 +58,7 @@ h1{
     color: #7e7e7e;
 }
 .btn-default{
-    font-family: "the grim raiders";
+    font-family: "the grim raiders", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: rgb(140, 0, 0);
     background-color: #3c3c3c;
 }
